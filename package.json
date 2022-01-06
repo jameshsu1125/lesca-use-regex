@@ -1,0 +1,51 @@
+{
+	"name": "npm-base-package",
+	"version": "0.0.0",
+	"description": "npm-base-package",
+	"main": "lib/index.js",
+	"scripts": {
+		"start": "webpack-dev-server --mode development",
+		"watch": "babel src/lib -w -d lib --copy-files",
+		"build": "babel src/lib -d lib --copy-files",
+		"dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
+		"rm": "rm -rf node_modules/ package-lock.json",
+		"deploy": "gh-pages -d dist",
+		"docs:prod": "webpack --mode production"
+	},
+	"keywords": [
+		"lesca",
+		"衝康吉",
+		"jameshsu1125"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"@babel/plugin-proposal-class-properties": "^7.16.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"@babel/preset-react": "^7.16.0",
+		"autoprefixer": "^10.4.0",
+		"babel-loader": "^8.2.3",
+		"concurrently": "^6.4.0",
+		"css-loader": "^6.5.1",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.5.0",
+		"less": "^4.1.2",
+		"less-loader": "^10.2.0",
+		"postcss": "^8.3.11",
+		"postcss-loader": "^6.2.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.64.1",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.5.0"
+	},
+	"author": "jamehsu1125 <jameshsu1125@gmail.com>",
+	"homepage": "https://github.com/jameshsu1125/npm-base-package",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:jameshsu1125/npm-base-package.git"
+	}
+}
