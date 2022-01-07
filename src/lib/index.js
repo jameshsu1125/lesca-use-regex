@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import './style.less';
+import { useState, useEffect, useRef } from 'react';
 
-class myClassName extends Component {
-	constructor(props) {
-		super(props);
-		console.log('a');
-	}
-	render() {
-		return <div>asd2</div>;
-	}
-}
+const useCountdown = (initialState = defaultProps) => {
+	const [value, setValue] = useState(initialState);
+	const [state, setState] = useState(value);
 
-export default myClassName;
+	useEffect(() => {}, [value]);
+
+	return [
+		state,
+		(e) => {
+			console.log(e);
+		},
+	];
+};
+
+export { useCountdown };
+export default useCountdown;
