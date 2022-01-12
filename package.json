@@ -1,7 +1,7 @@
 {
-	"name": "npm-base-package",
-	"version": "0.0.0",
-	"description": "npm-base-package",
+	"name": "lesca-use-regex",
+	"version": "1.0.0",
+	"description": "正則表達式: 中文, 英文, 數字, 電話, email.",
 	"main": "lib/index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
@@ -43,9 +43,9 @@
 		"webpack-dev-server": "^4.5.0"
 	},
 	"author": "jamehsu1125 <jameshsu1125@gmail.com>",
-	"homepage": "https://github.com/jameshsu1125/npm-base-package",
+	"homepage": "https://github.com/jameshsu1125/lesca-use-regex",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:jameshsu1125/npm-base-package.git"
+		"url": "git@github.com:jameshsu1125/lesca-use-regex.git"
 	}
 }
